@@ -1,6 +1,6 @@
 # 👨‍💻 Alef Lorenzo
 
-**`Desenvolvedor Front-end e Entusiasta de Tecnologia`**
+**`Desenvolvedor Fullstack e Entusiasta de Tecnologia`**
 
 Olá! Me chamo Alef Lorenzo e sou apaixonado por tecnologia e desenvolvimento. Atualmente, estou focado em me especializar em Front-end, criando interfaces modernas e responsivas, enquanto também desenvolvo meus conhecimentos em C, C++ e Java. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer na área de desenvolvimento.
 

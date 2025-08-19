@@ -5,7 +5,6 @@ Sou um entusiasta da tecnologia em constante evolução, focado em criar experi�
 
 <p align="left"> <a href="https://github.com/seuusername?tab=repositories&sort=stargazers"> <img alt="total stars" title="Total de estrelas no GitHub" src="https://custom-icon-badges.demolab.com/github/stars/AlefLorenzo?color=55960c&style=for-the-badge&labelColor=488207&logo=star"/></a> <a href="https://github.com/AlefLorenzo?tab=followers"> <img alt="followers" title="Me siga no GitHub" src="https://custom-icon-badges.demolab.com/github/followers/AlefLorenzo?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&logoColor=white"/></a> </p>
 
-
 🛠️ Linguagens e Ferramentas
 
 

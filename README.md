@@ -165,8 +165,9 @@ Olá! Me chamo Alef Lorenzo e sou apaixonado por tecnologia e desenvolvimento. A
 ---
 
 
+
 📫 **Como me encontrar:** 
 - GitHub: [github.com/AlefLorenzo](https://github.com/AlefLorenzo)
-- LinkedIn: [linkedin.com/in/alef-lorenzo-710225299]([https://www.linkedin.com/in/alef-lorenzo-710225299/](https://www.linkedin.com/in/alef-lorenzo-b31088302/))
+- LinkedIn: [linkedin.com/in/alef-lorenzo-b31088302](https://www.linkedin.com/in/alef-lorenzo-b31088302/)
 
 ⭐ **Sinta-se à vontade para explorar meus repositórios e entrar em contato!**

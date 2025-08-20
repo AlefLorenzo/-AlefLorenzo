@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete Gourmet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-orange-100 via-yellow-100 to-orange-50">
+    <!-- Header -->
+    <header class="bg-orange-500 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-3xl font-bold">Lanchonete Gourmet</h1>
+        <nav>
+            <ul class="flex space-x-4">
+            <li><a href="#promocoes" class="hover:text-yellow-200">Promoções</a></li>
+            <li><a href="menu.html" class="hover:text-yellow-200">Cardápio</a></li>
+            <li><a href="pedido.html" class="hover:text-yellow-200">Pedidos</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Banner Rotativo -->
+    <div class="relative overflow-hidden bg-orange-200">
+        <div class="carousel h-64">
+        <div class="carousel-item h-full bg-cover bg-center" style="background-image: url('assets/chinese-1755962_1280.jpg');"></div>
+        <div class="carousel-item h-full bg-cover bg-center" style="background-image: url('assets/pizza-3007395_1280.jpg');"></div>
+        <div class="carousel-item h-full bg-cover bg-center" style="background-image: url('assets/burger-2707320_1280.jpg');"></div>
+        </div>
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-orange-600 text-white px-4 py-2">❮</button>
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-orange-600 text-white px-4 py-2">❯</button>
+    </div>
+
+    <!-- Promoções -->
+    <section id="promocoes" class="py-12">
+        <div class="container mx-auto">
+        <h2 class="text-2xl font-bold text-center text-orange-700">Promoções do Dia</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/burger-2707320_1280.jpg" alt="Promoção 1" class="w-full h-40 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-semibold">Combo X-Burguer</h3>
+                <p class="text-gray-600">Lanche + Refrigerante por apenas R$19,90</p>
+            </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/chinese-1755962_1280.jpg" alt="Promoção 2" class="w-full h-40 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-semibold">Sobremesa Grátis</h3>
+                <p class="text-gray-600">Na compra de 2 lanches grandes, ganhe 1 mousse!</p>
+            </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/pizza-3007395_1280.jpg" alt="Promoção 3" class="w-full h-40 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-semibold">Delivery Grátis</h3>
+                <p class="text-gray-600">Pedidos acima de R$50,00 têm entrega grátis.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-orange-500 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+        <p class="text-sm">© 2024 Lanchonete Gourmet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
+    const prevButton = document.querySelector('.carousel button:first-child');
+    const nextButton = document.querySelector('.carousel button:last-child');
+
+    function showSlide(index) {
+    items.forEach((item, i) => {
+        item.classList.toggle('hidden', i !== index);
+    });
+    }
+
+    prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showSlide(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    showSlide(currentIndex);
+    });
+
+    showSlide(currentIndex);
+
+    </script>
+</body>
+</html>

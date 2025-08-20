@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Lanchonete Gourmet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-orange-50 to-yellow-100">
+    <!-- Header -->
+    <header class="bg-orange-500 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-3xl font-bold">Lanchonete Gourmet</h1>
+        <nav>
+            <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:text-yellow-200">Home</a></li>
+            <li><a href="pedido.html" class="hover:text-yellow-200">Pedidos</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Filtros e Categorias -->
+    <section class="py-6 container mx-auto">
+        <h2 class="text-2xl font-bold text-orange-700 text-center mb-4">Nosso Cardápio</h2>
+        <div class="flex justify-center space-x-4 mb-8">
+        <button onclick="filterMenu('all')" class="filter-button bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+            Todos
+        </button>
+        <button onclick="filterMenu('bebidas')" class="filter-button bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+            Bebidas
+        </button>
+        <button onclick="filterMenu('lanches')" class="filter-button bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+            Lanches
+        </button>
+        <button onclick="filterMenu('sobremesas')" class="filter-button bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+            Sobremesas
+        </button>
+        </div>
+
+        <!-- Itens do Menu -->
+        <div id="menu-items" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Os itens do menu serão adicionados dinamicamente pelo JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-orange-500 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+        <p class="text-sm">© 2024 Lanchonete Gourmet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para Detalhes do Produto -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center">
+        <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full relative">
+        <button onclick="closeModal()" class="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1">
+            ✖
+        </button>
+        <h3 id="modal-title" class="text-xl font-bold text-orange-700"></h3>
+        <img id="modal-image" src="" alt="" class="w-full h-40 object-cover mt-4 rounded-lg">
+        <p id="modal-description" class="text-gray-600 mt-4"></p>
+        <p id="modal-price" class="text-lg font-bold text-orange-600 mt-4"></p>
+        </div>
+    </div>
+
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

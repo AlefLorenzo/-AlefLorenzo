@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-50 font-sans">
+    <!-- Header -->
+    <header class="bg-yellow-500 text-white py-4">
+        <h1 class="text-4xl font-bold text-center">Monte seu Pedido</h1>
+    </header>
+
+    <!-- Lista de itens -->
+    <section class="py-12 mx-4">
+        <h2 class="text-2xl font-bold text-yellow-700 mb-4">Escolha seus itens:</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Exemplo de item -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <h4 class="text-lg font-semibold">X-Burguer</h4>
+            <p class="text-gray-600">Delicioso hambúrguer com queijo</p>
+            <button onclick="adicionarItem('X-Burguer', 12.99)" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">
+            Adicionar
+            </button>
+        </div>
+        <!-- Adicione outros itens seguindo o mesmo padrão -->
+        </div>
+    </section>
+
+    <!-- Resumo do pedido -->
+    <section class="py-12 mx-4">
+        <h2 class="text-2xl font-bold text-yellow-700">Seu Pedido:</h2>
+        <ul id="carrinho" class="mt-4 space-y-2"></ul>
+        <p id="total" class="mt-6 text-lg font-semibold text-gray-800">Total: R$ 0,00</p>
+        <button onclick="finalizarPedido()" class="mt-6 bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600">
+        Finalizar Pedido
+        </button>
+    </section>
+
+    <script src="scripts/pedido.js"></script>
+</body>
+</html>
